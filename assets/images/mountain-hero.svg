@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 240" fill="none">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#eff6ff" stop-opacity="0.8"/>
+      <stop offset="60%" stop-color="#e0f2fe" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="sunGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#fde047" stop-opacity="0.3"/>
+    </linearGradient>
+    <linearGradient id="backMtnGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#cbd5e1" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#f8fafc" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="midMtnGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#93c5fd" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#eff6ff" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="foreMtnGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#60a5fa" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="treeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#334155" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.85"/>
+    </linearGradient>
+    <linearGradient id="mistGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="25%" stop-color="#ffffff" stop-opacity="0.8"/>
+      <stop offset="60%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sun -->
+  <circle cx="580" cy="115" r="48" fill="url(#sunGrad)" />
+
+  <!-- Far Distant Mountains -->
+  <path d="M120 240 L280 90 L420 190 L520 110 L680 240 Z" fill="url(#backMtnGrad)" />
+  <path d="M280 90 L340 140 L420 190" stroke="#ffffff" stroke-width="2" opacity="0.6" />
+  <path d="M520 110 L580 160 L650 240" stroke="#ffffff" stroke-width="2" opacity="0.5" />
+
+  <!-- Mid Range Mountains -->
+  <path d="M220 240 L380 95 L490 175 L590 120 L750 240 Z" fill="url(#midMtnGrad)" />
+  <path d="M380 95 L410 135 L490 175" stroke="#ffffff" stroke-width="2" opacity="0.7" />
+  <path d="M590 120 L640 165 L720 240" stroke="#ffffff" stroke-width="2" opacity="0.6" />
+
+  <!-- Closer Ridge with subtle blue tones -->
+  <path d="M320 240 Q460 140 560 180 T780 200 L800 240 Z" fill="url(#foreMtnGrad)" />
+
+  <!-- Pine Trees Group Left/Mid -->
+  <g fill="url(#treeGrad)">
+    <!-- Tree 1 -->
+    <polygon points="560,195 554,212 566,212" />
+    <polygon points="560,185 552,202 568,202" />
+    <polygon points="560,175 550,192 570,192" />
+    <!-- Tree 2 -->
+    <polygon points="585,188 580,203 590,203" />
+    <polygon points="585,178 578,193 592,193" />
+    <polygon points="585,168 576,184 594,184" />
+    <!-- Tree 3 -->
+    <polygon points="615,180 608,198 622,198" />
+    <polygon points="615,168 605,188 625,188" />
+    <polygon points="615,155 602,175 628,175" />
+    <!-- Tree 4 (Tall) -->
+    <polygon points="640,165 632,185 648,185" />
+    <polygon points="640,150 629,173 651,173" />
+    <polygon points="640,135 626,160 654,160" />
+    <!-- Tree 5 -->
+    <polygon points="665,180 659,198 671,198" />
+    <polygon points="665,168 656,188 674,188" />
+    <polygon points="665,155 654,175 676,175" />
+    <!-- Tree 6 -->
+    <polygon points="695,190 688,206 702,206" />
+    <polygon points="695,178 686,196 704,196" />
+    <polygon points="695,165 684,184 706,184" />
+  </g>
+
+  <!-- Left fade-out mask to blend seamlessly with text -->
+  <rect x="0" y="0" width="460" height="240" fill="url(#mistGrad)" />
+</svg>
